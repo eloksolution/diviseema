@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Women Protection Cell"
+        android:id="@+id/textView14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="దివిసీమ పరిరక్షణ సమితి లక్ష్యాలలో మన నియోజక వర్గంలో మహిళల రక్షణను మా మొదటి ప్రాధాన్యతగా తీసుకోవడం జరిగింది. దేశంలో ఆడపడుచుల మీద జరుగుతున్న అరాచాలను , అక్రమాలను దృష్టిలో ఉంచుకుని అవనిగడ్డ నియోజక వర్గ ఆడపడుచుల రక్షణకై మేము ఇక నుంచి పోలీస్ డిపార్టుమెంటుతో పాటు గా కలిసి  పోరాడటం జరుగుతుంది."
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:lineSpacingExtra="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="అవనిగడ్డ నియోజకవర్గ పరిధిలోని ఏ ఒక్క ఆడ కూతురి పట్ల  లేక కాలేజీ స్టూడెంట్స్ పట్ల అమర్యాదగా ప్రవర్తించిన లేక మాట్లాడటం జరిగిన మా మొబైల్ నెంబర్ 8790577457 కి కాల్ తెలియచేసినచో, పోలీస్ డిపార్టుమెంటు మరియు ఇతర గవర్నమెంట్ సంస్థల సహకారంతో వారిని శిక్షించేలా మేము చెయ్యడం జరుగుతుంది."
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ఇట్లు,"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="శ్రీధర్ బాబు పురమా,"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="దివిసీమ పరిరక్షణ సమితి "
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+    </ScrollView>

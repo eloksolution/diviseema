@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_diviseema" default="compile.module.diviseema">
+  <dirname property="module.diviseema.basedir" file="${ant.file.module_diviseema}"/>
+  
+  <property name="module.jdk.home.diviseema" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.diviseema" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.diviseema" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.diviseema" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="diviseema.output.dir" value="${module.diviseema.basedir}/build/classes/production/Diviseema"/>
+  <property name="diviseema.testoutput.dir" value="${module.diviseema.basedir}/build/classes/test/Diviseema"/>
+  
+  <path id="diviseema.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="diviseema.module.production.classpath">
+    <path refid="${module.jdk.classpath.diviseema}"/>
+  </path>
+  
+  <path id="diviseema.runtime.production.module.classpath">
+    <pathelement location="${diviseema.output.dir}"/>
+  </path>
+  
+  <path id="diviseema.module.classpath">
+    <path refid="${module.jdk.classpath.diviseema}"/>
+    <pathelement location="${diviseema.output.dir}"/>
+  </path>
+  
+  <path id="diviseema.runtime.module.classpath">
+    <pathelement location="${diviseema.testoutput.dir}"/>
+    <pathelement location="${diviseema.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.diviseema">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.diviseema">
+    <patternset refid="excluded.from.module.diviseema"/>
+  </patternset>
+  
+  
+  <target name="compile.module.diviseema" depends="compile.module.diviseema.production,compile.module.diviseema.tests" description="Compile module Diviseema"/>
+  
+  <target name="compile.module.diviseema.production" depends="register.custom.compilers" description="Compile module Diviseema; production classes"/>
+  
+  <target name="compile.module.diviseema.tests" depends="register.custom.compilers,compile.module.diviseema.production" description="compile module Diviseema; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.diviseema" description="cleanup module">
+    <delete dir="${diviseema.output.dir}"/>
+    <delete dir="${diviseema.testoutput.dir}"/>
+  </target>
+</project>
